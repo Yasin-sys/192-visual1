@@ -22,7 +22,7 @@ object Form1: TForm1
     Width = 75
     Caption = 'Simpan'
     OnClick = btnSimpanClick
-    TabOrder = 7
+    TabOrder = 6
   end
   object Memo1: TMemo
     Left = 288
@@ -41,7 +41,7 @@ object Form1: TForm1
     Width = 75
     Caption = 'Reset'
     OnClick = btnResetClick
-    TabOrder = 6
+    TabOrder = 7
   end
   object rgJenisKelamin: TRadioGroup
     Left = 32

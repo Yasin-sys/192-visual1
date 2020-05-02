@@ -1,8 +1,118 @@
 object Form1: TForm1
-  Left = 366
-  Height = 240
-  Top = 127
-  Width = 320
+  Left = 444
+  Height = 453
+  Top = 205
+  Width = 632
   Caption = 'Form1'
+  ClientHeight = 453
+  ClientWidth = 632
   LCLVersion = '2.0.6.0'
+  object Edit1: TEdit
+    Left = 32
+    Height = 23
+    Top = 24
+    Width = 80
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object btnSimpan: TButton
+    Left = 184
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'Simpan'
+    OnClick = btnSimpanClick
+    TabOrder = 7
+  end
+  object Memo1: TMemo
+    Left = 288
+    Height = 392
+    Top = 24
+    Width = 326
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 8
+  end
+  object btnReset: TButton
+    Left = 80
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'Reset'
+    OnClick = btnResetClick
+    TabOrder = 6
+  end
+  object rgJenisKelamin: TRadioGroup
+    Left = 32
+    Height = 64
+    Top = 88
+    Width = 185
+    AutoFill = True
+    Caption = 'Jenis Kelamin'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 2
+    ClientHeight = 44
+    ClientWidth = 181
+    Columns = 2
+    Items.Strings = (
+      'Laki-laki'
+      'Perempuan'
+    )
+    TabOrder = 1
+  end
+  object cbKota: TComboBox
+    Left = 32
+    Height = 23
+    Top = 184
+    Width = 100
+    ItemHeight = 15
+    Items.Strings = (
+      'Banjarbaru'
+      'Martapura'
+      'Banjarmasin'
+      'Kandangan'
+      'Rantau'
+      'Amuntai'
+      'Barbai'
+      'Tanjung'
+      'Marabahan'
+      'Pelaihari'
+      'Tanah Bumbu'
+      'Kotabaru'
+    )
+    OnChange = cbKotaChange
+    TabOrder = 2
+    Text = 'cbKota'
+  end
+  object cbxFoto: TCheckBox
+    Left = 32
+    Height = 19
+    Top = 221
+    Width = 71
+    Caption = 'Foto 3 x 4'
+    OnChange = cbxFotoChange
+    TabOrder = 3
+  end
+  object cbxKTP: TCheckBox
+    Left = 33
+    Height = 19
+    Top = 256
+    Width = 90
+    Caption = 'Fotokopi KTP'
+    TabOrder = 4
+  end
+  object cbxIjazah: TCheckBox
+    Left = 32
+    Height = 19
+    Top = 296
+    Width = 100
+    Caption = 'Fotokopi Ijazah'
+    TabOrder = 5
+  end
 end
